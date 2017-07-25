@@ -1,0 +1,9 @@
+<% content_for :search do %>
+<div class="large-8 small-9 columns">
+<%= search_form_for @search do |f| %>
+  <%= f.text_field :translations_title_cont, class: "radius-left expand", placeholder: t("ransack.article title") %>
+
+    <%= f.submit t("ransack.search"), class: 'btn btn-sm btn-info' %>
+  </div>
+<% end %>
+<% end %>

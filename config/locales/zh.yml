@@ -1,0 +1,95 @@
+
+zh:
+  activerecord:
+    attributes:
+      article:
+        title: 标题
+        text: 文本
+        tags_id: Tags_id
+        image: 图片 "附加新图像"
+      comment:
+        commenter: 批评家
+        body: 身体
+    errors:
+        body: “田间有问题”
+        count:
+          one: “1错误禁止此％{article}被保存”
+          other:  “％{count}个错误禁止此％{article}被保存”
+    models:
+      article: 文章
+      comment: 注释
+  article:
+    about: 关于
+    add an article: “添加文章”
+    are_you_sure: “你确定?"
+    article title: “文章标题”
+    attach a new image: "附加新图像"
+    back: 背部
+    contact: 联系
+    create: 创建
+    cancel: 取消
+    delete: 删除
+    destroy: 破坏
+    edit: 编辑
+    footer: “博客页脚”
+    home: 家
+    login: 登录
+    logout: 登出
+    read more: "阅读更多"
+    search: 搜索
+    show: 显示
+    update: 更新
+  articles:
+    edit:
+      title: "编辑文章"
+    index:
+        count:
+          one: “有％{count}条”
+          other: “有％{count}条评论”
+          zero: “没有人留下了文章”
+        wellcome: 惠康
+        find articles to digest: "寻找文章来消化"
+        title: “文章清单”
+    new:
+        flash messages:
+          article was successfully created: “文章成功创作.”
+          article was successfully updated: “文章成功更新了.”
+        title: “添加文章”
+    show:
+        add a comment: "加评论"
+        comment:
+          commenter: 批评家
+          body: 身体
+        comments: 注释
+        tags: 标签
+        count:
+           one: "有％{count}个评论“"
+           other: “有％{count}条评论”
+           zero: “没有人留下评论”
+        title: 显示
+  comment:
+    commenter: 批评家
+    body: 身体
+  comments: 注释
+  languages:
+    en: 英语
+    fr: 法国
+    zh: 中文
+  paperclip: "附加新图像"
+  ransack:
+    article title: “文章标题”
+    asc: "升序"
+    attributes:
+    desc: "降序"
+    predicates:
+      cont: "包含"
+      end: "以改值结尾"
+      gt: "大于"
+      lt: "小于"
+      not_cont: "不包含"
+      start: "以改值开始"
+    search: 搜索
+  tagging: 标记
+  time:
+    formats:
+      long: "%-d %B %Y %H:%M:%S"

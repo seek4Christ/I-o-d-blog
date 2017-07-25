@@ -1,0 +1,101 @@
+
+
+
+
+
+
+fr:
+  activerecord:
+    attributes:
+      article:
+        image: "Joignez une nouvelle image"
+        tags_id: Tags_id
+        text: Texte
+        title: Titre
+      comment:
+        body: Corps
+        commenter: Commenter
+    errors:
+      article:
+        body: "Il y avait des problèmes avec les champs suivants:"
+        count:
+          one: "1 erreur interdit de sauvegarder ce% {article}"
+          other:  "% {count} erreurs interdit de sauvegarder ce% {article}"
+    models:
+      article: Article
+      comment: Commentaire
+  article:
+    about: Sur
+    add an article: "Ajouter un article"
+    are_you_sure: "Êtes vous sûr?"
+    article title: "Le titre de l'article"
+    attach a new image: "Joignez une nouvelle image"
+    back: Arrière
+    cancel: Cancel
+    contact: Contact
+    create: Créer Article
+    delete: Effacer
+    destroy: Détruire
+    edit: Modifier
+    footer: "Footer for the blog"
+    home: Accueil
+    login: S'identifier
+    logout: Connectez - Out
+    read more: "Lire La Suite"
+    search: Chercher
+    show: Montrer
+    update: Mettre à jour
+  articles:
+    edit:
+      title: "Modifier l'articl"
+    index:
+      wellcome: "Bienvenue"
+      count:
+        one: "Il y a% {count} article"
+        other: "Il existe des commentaires% {count}"
+        zero: "Personne n'a encore laissé un article"
+      find articles to digest: "Trouver des articles pour digérer"
+      title: "Liste des articles"
+    new:
+        flash messages:
+          article was successfully created: "L'article a été créé avec succès."
+          article was successfully updated: "L'article a été mis à jour avec succès."
+        title: "Ajouter Un Article"
+    show:
+        add a comment: "Ajouter un commentaire"
+        comment:
+          body: Corps
+          commenter: Commenter
+        comments: Commentaires
+        tags: Marques
+        count:
+          one: "Il y a% {count} commentaire"
+          other: "Il existe des commentaires% {count}"
+          zero: "Personne n'a encore laissé de commentaire"
+        title:  Montrer
+  comment:
+    body: Corps
+    commenter: Commenter
+  comments: Commentaires
+  languages:
+    en: Anglais
+    fr: français
+    zh: chinois
+  paperclip: "Joignez une nouvelle image"
+  ransack:
+    article title: "Le titre de l'article"
+    asc: "ascendant"
+    attributes: attributes
+    desc: "descendant"
+    predicates:
+      cont: "contient"
+      end: "finit par"
+      gt: "supérieur à"
+      lt: "less than"
+      not_cont: "ne contient pas"
+      start: "commence par"
+    search: recherche
+  tagging: Étiquetage
+  time:
+  formats:
+    long: "%-d %B %Y %H:%M:%S"

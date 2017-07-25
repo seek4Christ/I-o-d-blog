@@ -1,0 +1,59 @@
+<div class="row">
+   <div class=" col-md-offset-2 col-md-8">
+
+     <div class="panel-default">
+       <div class="panel-heading center"><h1><%= t 'articles.show.title' %><%= image_tag @article.image.url(:medium) %><div>
+         <div class="panel-body">
+    <% cache (@article) do %>
+    <% end %>
+     <h2><%= @article.title %></h2>
+      <small class="text-muted"><%= l(@article.created_at, format: '%-d %B %Y %H:%M:%S') %></small>
+    <div> <strong>Text:</strong><%= raw @article.text %></div>
+
+    <div>
+      <%=t('articles.show.tags')%>
+      <% @article.tags.each do |tag| %>
+        <%= link_to tag.name, tag_path(tag) %>
+      <% end %>
+    </div>
+
+
+           <h2><%=t("articles.show.comments")%>(<%= @article.comments.size %>)</h2>
+           <%= render @article.comments, cached: true %>
+
+           <h2><%=t("articles.show.add a comment") %></h2>
+           <%= render 'comments/form' %>
+         </div>
+
+
+
+         <div style='width: 800px;'>
+           <div id="map" style='width: 800px; height: 400px;'></div>
+           </div>
+           <script>
+           handler = Gmaps.build('Google');
+           handler.buildMap({
+               provider: {
+                 disableDefaultUI: true
+                 // pass in other Google Maps API options here
+               },
+               internal: {
+                 id: 'map'
+               }
+             },
+             function(){
+               markers = handler.addMarkers(<%=raw @hash.to_json %>);
+               handler.bounds.extendWith(markers);
+               handler.fitMapToBounds();
+                handler.getMap().setZoom(12);
+             }
+           );
+           </script>
+
+         <%= link_to t('article.edit'), edit_article_path(@article) %>
+
+         <%= link_to t('article.back'), articles_path %>
+         </div>
+    </div>
+  </div>
+</div>

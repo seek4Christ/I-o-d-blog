@@ -1,0 +1,123 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+
+en:
+  activerecord:
+    attributes:
+      article:
+        image: Attach A New Image
+        tags_id: Tags_id
+        text: Text
+        title: Title
+      comment:
+        body: Body
+        commenter: Commenter
+    errors:
+      article:
+        count:
+          one: "1 error prohibited this %{article} from being saved"
+          other: "%{count} errors prohibited this %{article} from being saved"
+        body: "There were problems with the folling fields"
+    models:
+      article: Article
+      comment: Comment
+  article:
+    about: About
+    add an article: "Add An Article"
+    are_you_sure: "Are you sure?"
+    article title: "Article title"
+    attach a new image: "Attach a new image"
+    back: Back
+    cancel: Cancel
+    contact: Contact
+    create: Create Article
+    delete: Delete
+    destroy: Destroy
+    edit: Edit
+    footer: "Footer for the blog"
+    home: Home
+    login: Login
+    logout: Logout
+    read more: "Read More"
+    search: Search
+    show: Show
+    update: Update
+  articles:
+    edit:
+      title: "Edit  article"
+    index:
+      wellcome: "Wellcome"
+      find articles to digest: "Find articles to digest"
+      title: "List of articles"
+      count:
+        one: "%{count} article"
+        other: "%{count} articles"
+    new:
+      flash messages:
+        article was successfully created: "Article was successfully created."
+        article was successfully updated: "Article was successfully updated."
+      title: "Add An Article"
+    show:
+      add a comment: "Add a comment"
+      comment:
+        body: Body
+        commenter: Commenter
+      comments: Comments
+      count:
+        one: "There is %{count} comment"
+        other: "There are %{count} comments"
+        zero: "No one has left a comment yet"
+      tags: tags
+      title: Show
+  comment:
+    body: Body
+    commenter: commenter
+    comments: Comments
+  languages:
+    zh: Chinese
+    en: English
+    fr: French
+  paperclip: "Attach A New Image"
+  ransack:
+    article title: "Article title"
+    asc: ascending
+    attributes:
+      article:
+        body: "Main Content"
+        title: "Article Title"
+      person:
+        name: "Full Name"
+    desc: descending
+    models:
+      person: Passanger
+    predicates:
+      cont: contains
+      end: "ends with"
+      gt: "greater than"
+      lt: "less than"
+      not_cont: "not contains"
+      start: "starts with"
+    search: Search
+  tagging: Tagging
+  time:
+  formats:
+    long: "%-d %B %Y %H:%M:%S"

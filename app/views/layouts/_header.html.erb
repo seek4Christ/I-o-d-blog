@@ -1,0 +1,39 @@
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle=
+      "collapse" data-target="#bs-example-navbar-collapse">
+
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <% link_to "Ola Blog", root_path, class: "navbar-brand" %>
+       </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+       <li><%= link_to ("english "), { :locale=>'en' } %></li>
+       <li><%= link_to (" français "), { :locale=>'fr' } %></li>
+       <li><%= link_to (" 中文 "), { :locale=>'zh' } %></li>
+        <li><%= link_to t('article.home'), root_path %></li>
+        <li><%= link_to t('article.contact'), articles_contact_path %></li>
+        <li><%= link_to t('article.about'), articles_about_path %></li>
+      <ul class="nav navbar-nav navbar-right">
+        <% if user_signed_in? %>
+        <!--This block is only visible to signed in admins -->
+          <li><%= link_to t('article.add an article'), new_article_path %></li>
+          <li><%= link_to t('article.edit'), edit_user_registration_path  %></li>
+          <li><%= link_to t('article.logout'), destroy_user_session_path, :method => :delete %></li>
+        <!-- The block ends here -->
+        <% else %>
+          <li><%= link_to t('article.login'), new_user_session_path  %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

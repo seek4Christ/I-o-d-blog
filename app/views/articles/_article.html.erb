@@ -1,0 +1,9 @@
+
+
+<div>
+  <h2><%= link_to t('article.title'), article_path(article) %></h2>
+
+  <small class="text-muted"><%= l(article.created_at, format: '%-d %B %Y %H:%M:%S') %></small>
+
+  <p><%= truncate(strip_tags(article.text), length: 600) %></p>
+</div>

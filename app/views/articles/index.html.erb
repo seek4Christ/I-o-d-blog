@@ -1,0 +1,53 @@
+
+
+<div class="jumbotron">
+    <h1><%= t("articles.index.wellcome") %></h1>
+
+  <p><%= t("articles.index.find articles to digest") %></p>
+
+</div>
+
+<div id="articles" class="transitions-enabled">
+  <%= cache (@articles) do %>
+  <% @articles.each do |article| %>
+  <div class="box">
+    <div class="panel panel-default">
+      <h2><%= article.title %></h2>
+        <small class="text-muted"><%= l(article.created_at, format: '%-d %B %Y %H:%M:%S') %></small>
+        <div class="panel-body">
+        <div>
+        <%= raw(article.text).truncate(600) %>
+      </div>
+      <div>
+        <%= link_to t("article.read more"), article_path(article) %>
+    </div>
+  </div>
+    <div class="panel-footer">
+      <% if user_signed_in? %>
+        <%= link_to t("article.show"), article_path(article), class: "btn btn-default" %>
+        <%= link_to t("article.edit"), edit_article_path(article), class: "btn btn-default" %>
+        <%= link_to t("article.delete"), article_path(article), class:
+        "btn btn-default", data: {:confirm => t("article.are you sure?")},
+        method: :delete, remote: true %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+    <% end %>
+    </div>
+  <% end %>
+  <%= render "title_search_box" %>
+  <div class="page_header">
+    <h1>Articles</h1>
+  </div>
+  <div id="articles">
+  <%= render @articles %>
+</div>
+
+<div id="infinite-scrolling">
+  <%= will_paginate %>
+</div>
+
+  <div class="center">
+    <%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+  </div>

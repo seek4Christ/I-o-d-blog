@@ -1,0 +1,18 @@
+
+<div>t(Posted) <%= l(distance_of_time_in_words(comment.article.created_at,
+ comment.created_at) %> t(later) </div>
+
+ <div>
+ <strong><%=t("articles.show.comment.commenter")%></strong>
+<%= comment.commenter %>
+
+<strong><%=t("articles.show.comment.body")%></strong>
+<%= comment.body %>
+</div>
+
+<div>
+<%= link_to 'Destroy Comment', [comment.article, comment],class: "btn btn-danger",
+             method: :delete,
+             data: { confirm: t('article.are you sure?') } %>
+
+  </div>
