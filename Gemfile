@@ -10,7 +10,11 @@ end
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
 
-gem 'pg'
+
+group :development do
+  gem 'sqlite3'
+end
+
 
 
 
@@ -50,6 +54,12 @@ gem 'elastic_ransack'
 gem 'globalize', git: 'https://github.com/globalize/globalize'
 gem 'activemodel-serializers-xml'
 gem 'bundler'
+
+
+
+group :production do
+  gem 'pg'
+end
 
 
 # Use Redis adapter to run Action Cable in production
