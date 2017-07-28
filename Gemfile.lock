@@ -238,7 +238,6 @@ PLATFORMS
 DEPENDENCIES
   activemodel-serializers-xml
   bootstrap-sass
-  bundler
   byebug
   coffee-rails (~> 4.2)
   devise
@@ -270,6 +269,9 @@ DEPENDENCIES
   web-console (>= 3.3.0)
   will_paginate
   will_paginate-bootstrap
+
+RUBY VERSION
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.15.3
