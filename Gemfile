@@ -5,17 +5,16 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.3.3"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use sqlite3 as the database for Active Record
+ruby "2.3.3"
 
 
-  
-  group :development, :test do
-    gem 'sqlite3'
-   end
-  gem 'pg', group: :production
+
+
+  gem 'pg'
 
 
 
