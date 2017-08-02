@@ -55,6 +55,7 @@ fr:
         other: "Il existe des commentaires% {count}"
         zero: "Personne n'a encore laissé un article"
       find articles to digest: "Trouver des articles pour digérer"
+      the time is now: "C'est maintenant"
       title: "Liste des articles"
     new:
         flash messages:
@@ -99,3 +100,4 @@ fr:
   time:
   formats:
     long: "%-d %B %Y %H:%M:%S"
+    short: "%H:%M:%S"

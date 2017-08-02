@@ -49,6 +49,7 @@ zh:
           zero: “没有人留下了文章”
         wellcome: 惠康
         find articles to digest: "寻找文章来消化"
+        the time is now: "就是现在"
         title: “文章清单”
     new:
         flash messages:
@@ -93,3 +94,4 @@ zh:
   time:
     formats:
       long: "%-d %B %Y %H:%M:%S"
+      short: "%H:%M:%S"

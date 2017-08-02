@@ -67,6 +67,7 @@ en:
     index:
       wellcome: "Wellcome"
       find articles to digest: "Find articles to digest"
+      the time is now: "The time is now"
       title: "List of articles"
       count:
         one: "%{count} article"
@@ -121,3 +122,4 @@ en:
   time:
   formats:
     long: "%-d %B %Y %H:%M:%S"
+    short: "%H:%M:%S"
