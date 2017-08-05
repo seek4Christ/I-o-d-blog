@@ -6,7 +6,6 @@ $(function(){
   $container.imagesLoaded(function(){
     $container.masonry({
       itemSelector: '.box',
-      animate: true
       columnWidth: 100
     });
   });
