@@ -77,7 +77,10 @@ zh:
     en: 英语
     fr: 法国
     zh: 中文
-  paperclip: "附加新图像"
+  paperclip:
+    attach A New Image: "附加新图像"
+    choose file: “选择文件”
+    no file choosen: “没有文件选择”
   ransack:
     article title: “文章标题”
     asc: "升序"

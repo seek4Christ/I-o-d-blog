@@ -49,7 +49,7 @@ en:
     back: Back
     cancel: Cancel
     contact: Contact
-    create: Create 
+    create: Create
     delete: Delete
     destroy: Destroy
     edit: Edit
@@ -97,7 +97,10 @@ en:
     zh: Chinese
     en: English
     fr: French
-  paperclip: "Attach A New Image"
+  paperclip:
+    attach A New Image: "Attach A New Image"
+    choose file: "Choose File"
+    no file choosen: "No file choosen"
   ransack:
     article title: "Article title"
     asc: ascending

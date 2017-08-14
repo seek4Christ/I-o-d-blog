@@ -33,7 +33,7 @@ fr:
     back: Arrière
     cancel: Cancel
     contact: Contact
-    create: Créer 
+    create: Créer
     delete: Effacer
     destroy: Détruire
     edit: Modifier
@@ -82,7 +82,10 @@ fr:
     en: Anglais
     fr: français
     zh: chinois
-  paperclip: "Joignez une nouvelle image"
+  paperclip:
+    attach A New Image: "Joindre une nouvelle image"
+    choose file: "Choisir le fichier"
+    no file choosen: "Aucun fichier choisi"
   ransack:
     article title: "Le titre de l'article"
     asc: "ascendant"
