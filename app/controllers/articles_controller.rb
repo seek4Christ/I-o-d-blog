@@ -3,6 +3,8 @@ class ArticlesController < ApplicationController
 
 
   def index
+    @current_time = Time.now.to_s
+    ActionCable.server.broadcast 'clock_channel', message: '<p>'+Time.now.to_s+'</p>'
     @search = Article.search(params[:q])
     @articles = @search.result(distinct: true)
     @articles = Article.all.paginate(page: params[:page], per_page: 4)
@@ -78,11 +80,4 @@ end
     def article_params
     params.require(:article).permit(:title, :text, :tag_list, :image,:lat, :lng )
   end
-
-  def search
-      if params[:q]
-        search_params = CGI::escapeHTML(params[:q])
-        redirect_to (url)
-      end
-    end
 end

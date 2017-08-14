@@ -61,6 +61,7 @@ zh:
         comment:
           commenter: 批评家
           body: 身体
+          Create Comment: "创建 注释"
         comments: 注释
         tags: 标签
         count:
